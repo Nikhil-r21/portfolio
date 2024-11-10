@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Portfolio Website for Nikhil Raghupathy
+    Author: Nikhil Raghupathy
+    Description: Personal portfolio showcasing skills, experience, and projects
+    Last Updated: 2024
+    Structure:
+    1. Head - Meta tags, title, and resource links
+    2. Body
+        - Preloader
+        - Header/Navigation
+        - Main Content Sections
+            - Hero
+            - About
+            - Experience
+            - Skills
+            - Projects
+            - Education
+            - Contact
+        - Footer
+        - Scroll Up Button
+-->
+
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nikhil Raghupathy - Expert Cloud and DevOps Engineer specializing in AWS, Docker, and automation">
+    <meta name="keywords" content="Cloud Engineer, DevOps, AWS, Docker, Terraform, Python, Kubernetes">
+    <meta name="author" content="Nikhil Raghupathy">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Nikhil Raghupathy - Cloud & DevOps Engineer">
+    <meta property="og:description" content="Professional portfolio of Nikhil Raghupathy - Cloud and DevOps Engineer">
+    <meta property="og:image" content="path-to-your-image.jpg">
+    
+    <title>Nikhil Raghupathy | Cloud & DevOps Engineer</title>
+    
+    <!-- External Resources -->
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Preloader: Shown while page content loads -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section: Contains navigation and branding -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Brand Logo/Name -->
+            <a href="#" class="nav__logo">
+                <span class="highlight">Nikhil</span> Raghupathy
+            </a>
+            
+            <!-- Main Navigation Menu -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <!-- <li class="nav__item"><a href="https://cloudtrailblazer.blogspot.com/" class="nav__link" target="_blank">Blogs</a></li> -->
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section: Introduction and primary call-to-action -->
+        <section class="hero section" id="hero">
+            <div class="hero__container container">
+                <!-- Left Column: Text Content -->
+                <div class="hero__content">
+                    <!-- Title Area -->
+                    <div class="hero__titles">
+                        <h1 class="hero__name">Nikhil Raghupathy</h1>
+                        <div class="hero__profession">
+                            <span class="profession__text">Jr. Cloud & DevOps Engineer</span>
+                            <div id="typing-text" class="typing__text"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="hero__description">
+                        Specializing in cloud architecture, automation, and DevOps practices to build scalable and reliable infrastructure solutions.
+                    </p>
+                    
+                    <!-- Call-to-Action Buttons -->
+                    <div class="hero__buttons">
+                        <a href="#contact" class="button button--primary">Contact Me</a>
+                        <a href="#projects" class="button button--ghost">View Projects</a>
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="hero__scroll">
+                        <a href="#about" class="scroll__button">
+                            <i class="fas fa-mouse"></i>
+                            <span>Scroll Down</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Profile Image -->
+                <div class="hero__image">
+                    <div class="hero__blob"></div>
+                    <img src="profile-photo.jpg" alt="Nikhil Raghupathy" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section: Professional summary and statistics -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <!-- Professional Statistics -->
+                    <div class="about__info">
+                        <!-- Experience Box -->
+                        <div class="about__box">
+                            <i class="fas fa-award about__icon"></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">1+ Years</span>
+                        </div>
+                        <!-- Projects Box -->
+                        <div class="about__box">
+                            <i class="fas fa-briefcase about__icon"></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">4+ Projects</span>
+                        </div>
+                        <!-- Certification Box -->
+                        <div class="about__box">
+                            <i class="fas fa-certificate about__icon"></i>
+                            <h3 class="about__title">Certified</h3>
+                            <span class="about__subtitle">AWS Certified Cloud Practitioner</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Description -->
+                    <p class="about__description">
+                        I am currently working as a Jr. Cloud & DevOps Engineer at eCosmos Solutions Private Limited. As an AWS
+                        Certified Cloud Practitioner, I specialize in cloud architecture, infrastructure as code, and cost
+                        optimization. I'm also focused on advancing my coding skills, particularly in Python, to stay current
+                        with new technologies.
+                    </p>
+                    
+                    <!-- Resume Download Link -->
+                    <a href="./assets/pdf/Nikhil_Resume.pdf" class="back-link" download="Nikhil_Resume.pdf">
+                        Download CV &nbsp;<i class="fas fa-download button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section: Work history -->
+        <section class="experience section" id="experience">
+            <h2 class="section__title">Work Experience</h2>
+            <div class="experience__container container">
+                <div class="timeline">
+                    <!-- Current Position -->
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <span class="timeline__date">Sept 2023 - Present</span>
+                            <h3 class="timeline__title">Jr. Cloud & DevOps Engineer</h3>
+                            <p class="timeline__company"><i>e-Cosmos (India) Pvt. Ltd.</i></p>
+                            <ul class="timeline__description">
+                                <li>Led cloud infrastructure development using AWS services.</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 60%.</li>
+                                <li>Managed containerized applications using Docker.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section: Technical competencies -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills__container">
+                <!-- Cloud Technologies -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-cloud skills__icon"></i>
+                        <h3 class="skills__title">Cloud Technologies</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">AWS, OpenStack</div>
+                    </div>
+                </div>
+                
+                <!-- Version Control -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-code-branch skills__icon"></i>
+                        <h3 class="skills__title">Version Control</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">Git, GitHub</div>
+                    </div>
+                </div>
+                
+                <!-- CI/CD Tools -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-tools skills__icon"></i>
+                        <h3 class="skills__title">CI/CD Tools</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">GitHub Actions</div>
+                    </div>
+                </div>
+                
+                <!-- Containerization -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-cube skills__icon"></i>
+                        <h3 class="skills__title">Containerization</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">Docker</div>
+                    </div>
+                </div>
+                
+                <!-- Web Server -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-server skills__icon"></i>
+                        <h3 class="skills__title">Web Server</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">Nginx</div>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-code skills__icon"></i>
+                        <h3 class="skills__title">Programming</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">Python</div>
+                        <div class="skills__data">Shell Scripting</div>
+                    </div>
+                </div>
+                
+                <!-- Other Tools -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-tools skills__icon"></i>
+                        <h3 class="skills__title">Other Tools</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">SSH</div>
+                    </div>
+                </div>
+                
+                <!-- Networking -->
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="fas fa-network-wired skills__icon"></i>
+                        <h3 class="skills__title">Networking</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skills__data">Networking Fundamentals</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section: Portfolio of work -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects-container">
+                <!-- Project Cards -->
+                <!-- Each card shows project preview and opens detailed modal -->
+                
+                <!-- Kliqmee Web Application -->
+                <div class="project-card" data-modal="modal1">
+                    <h3>Kliqmee Web Application</h3>
+                    <a href="#" class="project__button">
+                        View Details &nbsp;<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Verificarepro -->
+                <div class="project-card" data-modal="modal2">
+                    <h3>Verificarepro</h3>
+                    <a href="#" class="project__button">
+                        View Details &nbsp;<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Server Build -->
+                <div class="project-card" data-modal="modal3">
+                    <h3>Server Build for Internal Compute Requirements</h3>
+                    <a href="#" class="project__button">
+                        View Details &nbsp;<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- OpenStack Project -->
+                <div class="project-card" data-modal="modal4">
+                    <h3>Private Cloud Creation using OpenStack</h3>
+                    <a href="#" class="project__button">
+                        View Details &nbsp;<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Web Scraper -->
+                <div class="project-card" data-modal="modal5">
+                    <h3>Web Scraper Development (Python and Selenium)</h3>
+                    <a href="#" class="project__button">
+                        View Details &nbsp;<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Modal Windows -->
+            <!-- Detailed project information shown in modal popups -->
+            
+            <!-- Kliqmee Modal -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h4>Kliqmee Web Application</h4>
+                    <ul>
+                        <li>Deployed the Kliqmee web application on AWS EC2, ensuring high availability and scalability.</li>
+                        <li>Developed a CI/CD pipeline using GitHub Actions, automating build, test, and deployment processes.</li>
+                        <li>Configured Nginx as a reverse proxy, optimizing performance for faster response times.</li>
+                        <li>Managed SSL certificates to secure data transmission, enhancing application security.</li>
+                        <li>Set up monitoring and logging solutions to track application performance.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">EC2</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">GitHub Actions(CI/CD)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verificarepro Modal -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h4>Verificarepro</h4>
+                    <ul>
+                        <li>Monitored AWS deployment to ensure scalable application performance.</li>
+                        <li>Developed a CI/CD pipeline using GitHub Actions for seamless updates.</li>
+                        <li>Created a data scraping tool using Python and Selenium for automated data extraction.</li>
+                        <li>Optimized cloud resource usage, reducing deployment costs.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">GitHub Actions(CI/CD)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Server Build Modal -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h4>Server Build for Internal Compute Requirements</h4>
+                    <ul>
+                        <li>Deployed a physical server running Ubuntu for internal computational needs.</li>
+                        <li>Configured network topology, including VLANs and IP addressing.</li>
+                        <li>Implemented security protocols including firewalls and SSH access.</li>
+                        <li>Managed server operations with regular maintenance and monitoring.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">Network Topology</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">Firewall</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OpenStack Modal -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h4>Private Cloud Creation using OpenStack</h4>
+                    <ul>
+                        <li>Designed and implemented private cloud infrastructure using OpenStack.</li>
+                        <li>Set up virtual machines, storage volumes, and network components.</li>
+                        <li>Automated provisioning through Infrastructure as Code principles.</li>
+                        <li>Monitored resource utilization and optimized cloud performance.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">OpenStack</span>
+                        <span class="tag">Networking</span>
+                        <span class="tag">Cloud Computing</span>
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Scraper Modal -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h4>Web Scraper Development</h4>
+                    <ul>
+                        <li>Developed an automated web scraper using Python and Selenium.</li>
+                        <li>Integrated the scraper with a database for organized storage.</li>
+                        <li>Implemented multi-threading and scheduling to enhance performance.</li>
+                        <li>Built custom parsers to handle various webpage structures.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Selenium</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section: Academic background and certifications -->
+        <section class="education section" id="education">
+            <h2 class="section__title">Education</h2>
+            
+            <div class="timeline">
+                <!-- MCA Education -->
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h3>Master of Computer Applications</h3>
+                        <p>S. A. Engineering College</p>
+                        <p>Jun 2021 - Apr 2023</p>
+                        <p>Chennai, Tamil Nadu, India</p>
+                        <p><strong>CGPA:</strong> 8.33</p>
+                    </div>
+                </div>
+
+                <!-- BCA Education -->
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p>Apollo Arts & Science College</p>
+                        <p>Jun 2018 - Apr 2021</p>
+                        <p>Chennai, Tamil Nadu, India</p>
+                        <p><strong>CGPA:</strong> 7.81</p>
+                    </div>
+                </div>
+
+                <!-- AWS Certification -->
+                <div class="timeline__item">
+                    <div class="timeline__content_2">
+                        <!-- Front side -->
+                        <div class="card-front">
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <p>Amazon Web Services (AWS)</p>
+                            <p><strong>Issued:</strong> May 2023</p>
+                            <i class="fas fa-sync-alt flip-icon" aria-hidden="true"></i>
+                        </div>
+                        <!-- Back side -->
+                        <div class="card-back">
+                            <div class="badge-container">
+                                <img src="./assets/images/badge.png" class="badge" alt="AWS Certification Badge">
+                            </div>
+                            <a href="https://www.credly.com/badges/aa27a155-f8d3-4a63-84e3-3c2a37515769/public_url" class="back-link" target="_blank">
+                                <i class="fas fa-certificate"></i> &nbsp;Verify Certification
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section: Get in touch form and contact information -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Get in Touch</h2>
+            <div class="contact__container container grid">
+                <!-- Contact Information -->
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">rnikhilvignesh21@gmail.com</span>
+                            <a href="mailto:rnikhilvignesh21@gmail.com" class="contact__button">
+                                Write me <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__content">
+                    <form id="contact-form" class="contact__form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="name" class="contact__form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Email</label>
+                            <input type="email" name="email" class="contact__form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Message</label>
+                            <textarea name="message" class="contact__form-input" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="button button--flex">
+                            Send Message &nbsp;<i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section: Social links and copyright -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <!-- About Section -->
+                <div class="footer__section">
+                    <h4 class="footer__title">About Me</h4>
+                    <p class="footer__description">
+                        Cloud enthusiast and Jr. DevOps Engineer passionate about creating innovative cloud solutions.
+                    </p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#hero" class="footer__link"></i>Home</a></li>
+                        <li><a href="#about" class="footer__link"></i>About</a></li>
+                        <li><a href="https://cloudtrailblazer.blogspot.com/" target="_blank" class="footer__link">Discover the Blogs</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact Info</h4>
+                    <div class="footer__contact">
+                        <p><i class="fas fa-envelope"></i> rnikhilvignesh21@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+    
+                <!-- Social Links Section -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Stay In Touch</h4>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/nikhilraghupathy" target="_blank" class="footer__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Nikhil-r21" target="_blank" class="footer__social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:rnikhilvignesh21@gmail.com" target="_blank" class="footer__social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://cloudtrailblazer.blogspot.com/" target="_blank" class="footer__social-link">
+                            <i class="fab fa-blogger"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Bottom Bar -->
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2024 Nikhil Raghupathy. All rights reserved.
+                </p>
+                <div class="footer__bottom-links">
+                    <a href="privacy_policy.html" class="footer__bottom-link">Privacy Policy</a>
+                    <span class="footer__divider">•</span>
+                    <a href="terms_of_use.html" class="footer__bottom-link">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button: Fixed position button to return to top -->
+    <a href="#hero" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+</body>
+</html>
