@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Use for your portfolio website">
+    <title>Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom properties with enhanced color scheme */
+        :root {
+            /* Layout */
+            --header-height: 3.5rem;
+            --section-spacing: 2rem;
+            
+            /* Colors */
+            --primary-color: #4a90e2;
+            --primary-hover: #357abd;
+            --secondary-color: #2ecc71;
+            --accent-color: #f39c12;
+            --title-color: #f8f9fa;
+            --text-color: #e9ecef;
+            --body-color: #121212;
+            --container-color: #1a1a1a;
+            --scroll-bar-color: #4a4a4a;
+            --scroll-thumb-color: #6b6b6b;
+            --error-color: #e74c3c;
+            --success-color: #27ae60;
+
+            /* Typography */
+            --body-font: 'Poppins', system-ui, -apple-system, sans-serif;
+            --title-font-size: clamp(1.5rem, 5vw, 2rem);
+            --subtitle-font-size: clamp(1rem, 3vw, 1.125rem);
+            --normal-font-size: clamp(0.875rem, 2vw, 0.938rem);
+            --small-font-size: clamp(0.75rem, 1.5vw, 0.813rem);
+
+            /* Font weights */
+            --font-light: 300;
+            --font-normal: 400;
+            --font-medium: 500;
+            --font-semibold: 600;
+            --font-bold: 700;
+
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+
+            /* Border Radius */
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 16px;
+
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reset and base styles */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Improved focus styles for accessibility */
+        :focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Smooth scrolling for the whole page */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--body-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Enhanced back link with improved accessibility */
+        .back-link {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.75rem 1.25rem;
+            background-color: var(--primary-color);
+            color: var(--title-color);
+            text-decoration: none;
+            border-radius: var(--border-radius-md);
+            font-weight: var(--font-medium);
+            font-size: var(--normal-font-size);
+            transition: all var(--transition-normal);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            z-index: var(--z-fixed);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .back-link:hover,
+        .back-link:focus-visible {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-link::before {
+            content: "←";
+            font-size: 1.2em;
+            transition: transform var(--transition-fast);
+        }
+
+        .back-link:hover::before {
+            transform: translateX(-4px);
+        }
+
+        /* Enhanced container with animation */
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: var(--container-color);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Typography enhancements */
+        h1 {
+            color: var(--title-color);
+            font-size: var(--title-font-size);
+            font-weight: var(--font-bold);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-normal);
+        }
+
+        .effective-date {
+            color: var(--text-color);
+            font-style: italic;
+            font-size: var(--small-font-size);
+            margin-bottom: var(--section-spacing);
+            font-weight: var(--font-light);
+            opacity: 0.8;
+        }
+
+        .welcome {
+            margin-bottom: var(--section-spacing);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-normal);
+            padding: 1rem;
+            background-color: rgba(74, 144, 226, 0.1);
+            border-radius: var(--border-radius-md);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .section {
+            margin-bottom: var(--section-spacing);
+            transition: transform var(--transition-normal);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: var(--subtitle-font-size);
+            font-weight: var(--font-semibold);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-light);
+            transition: color var(--transition-fast);
+        }
+
+        li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: -1rem;
+            transition: transform var(--transition-fast);
+        }
+
+        /* Enhanced scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: var(--scroll-bar-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--scroll-thumb-color);
+            border-radius: var(--border-radius-lg);
+            border: 3px solid var(--scroll-bar-color);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Print styles */
+        @media print {
+            .back-link {
+                display: none;
+            }
+
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 1rem;
+            }
+
+            h1, h2 {
+                color: black;
+            }
+        }
+
+        /* Reduced motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Dark mode detection */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --body-color: #ffffff;
+                --container-color: #f8f9fa;
+                --text-color: #212529;
+                --title-color: #000000;
+            }
+        }
+
+        /* Responsive design improvements */
+        @media screen and (max-width: 768px) {
+            .container {
+                margin: 3rem auto;
+                padding: 1.5rem;
+                width: 95%;
+            }
+
+            .back-link {
+                top: 0.5rem;
+                left: 0.5rem;
+                padding: 0.5rem 1rem;
+                font-size: var(--small-font-size);
+            }
+
+            .section:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link" aria-label="Back to Portfolio">Back to Portfolio</a>
+    <main class="container">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: <time datetime="2024-10-10">October 10, 2024</time></p>
+        
+        <div class="welcome" role="note">
+            At my portfolio, we respect your privacy and are committed to protecting any information you may provide.
+        </div>
+
+        <section class="section" aria-labelledby="information-collection">
+            <h2 id="information-collection">1. Information Collection</h2>
+            <ul>
+                <li>We may collect personal information such as your name and email address when you voluntarily provide it (e.g., signing up for a newsletter).</li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="use-of-information">
+            <h2 id="use-of-information">2. Use of Information</h2>
+            <ul>
+                <li>We use the collected information to improve site functionality, communicate with you, or respond to inquiries.</li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="cookies">
+            <h2 id="cookies">3. Cookies</h2>
+            <ul>
+                <li>Our website may use cookies to enhance your experience. You may disable cookies in your browser settings.</li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="data-security">
+            <h2 id="data-security">4. Data Security</h2>
+            <ul>
+                <li>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or alteration.</li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="third-party-links">
+            <h2 id="third-party-links">5. Third-Party Links</h2>
+            <ul>
+                <li>Our site may include links to third-party websites. We are not responsible for their privacy practices or content.</li>
+            </ul>
+        </section>
+        <section class="section" aria-labelledby="policy-updates">
+            <h2 id="policy-updates">6. Policy Updates</h2>
+            <ul>
+                <li>We reserve the right to update this Privacy Policy at any time. Changes will be posted on this page.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
